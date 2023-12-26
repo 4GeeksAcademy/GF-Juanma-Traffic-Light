@@ -12,9 +12,10 @@
 */
 .traffic-light{
     background: black;
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
     margin: auto;
+ 
 }
 
 
@@ -23,19 +24,22 @@
     height: 100px;
     border-radius: 50%;
     background: red;
+    margin-bottom: 4px;
 }
 .yellow{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background: yellow;
+    margin-bottom: 4px;
 }
+
 .green{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background: green;
 }
-.selected{
-    box-shadow: 0px 0px 0px 0px #747DE8 ;
+.selected {
+    box-shadow: 0px 0px 20px 5px #747DE8;
 }

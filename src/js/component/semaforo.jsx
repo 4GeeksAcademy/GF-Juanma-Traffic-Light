@@ -5,27 +5,31 @@ import React, { useState } from "react";
 
 //create your first component
 const TrafficLight = () => {
-	const [color, setColor] = useState("red");
-	const Click = (color)=>{
-		setColor(color)
-	}
-	const Colors = ()=>{
-		if (color === "red") setColor("red");
-		if (color === "yellow") setColor("yellow");
-		else if (color === "green") setColor("green");
+	
+    const [color, setColor] = useState("red");
+    
 
-	}
-	return (
-		<div className="traffic-light">
-			<div className={`red ${ color === "red" ? "active" : ""}`}
-			 ></div>
-			<div className={`yellow ${ color === "yellow" ? "active" : ""}`}></div>
-			<div className={`green ${ color === "green" ? "active" : ""}`}
-			onClick={Click}></div>
-		</div>
-		
+    const HandleClick = (color) => {
+        setColor(color);
+    };
 
-	);
+    return (
+        <div className="traffic-light">
+            <div 
+                className={`red ${color === "red" ? "selected" : ""}`} 
+                onClick={() => HandleClick("red")}
+            ></div>
+            <div 
+                className={`yellow ${color === "yellow" ? "selected" : ""}`} 
+                onClick={() => HandleClick("yellow")}
+            ></div>
+            <div 
+                className={`green ${color === "green" ? "selected" : ""}`} 
+                onClick={() => HandleClick("green")}
+            ></div>
+			
+        </div>
+    );
 };
 
 export default TrafficLight;
