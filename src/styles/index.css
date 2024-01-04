@@ -1,21 +1,12 @@
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
 .traffic-light{
     background: black;
     padding: 15px;
     display: inline-block;
     margin: auto;
- 
+    border: 10px solid #333;
+    border-radius: 20px;
 }
 
 
@@ -40,6 +31,21 @@
     border-radius: 50%;
     background: green;
 }
+.purple{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: purple;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 .selected {
     box-shadow: 0px 0px 20px 5px #747DE8;
+}
+
+#colorBoton{
+    margin-top: 5px;
+}
+#purpleBoton{
+    margin-top: 5px;
 }
